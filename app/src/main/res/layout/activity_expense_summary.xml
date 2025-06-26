@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔘 Logout ImageButton -->
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/logoutimg"
+        android:background="@android:color/transparent"
+        android:contentDescription="Logout"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:padding="4dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Summary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/logoutButton"
+        android:id="@+id/summaryac"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"/>
+
+    <!-- 📊 Pie Chart -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/summaryac"
+        android:layout_marginTop="24dp"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
